@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3E2614216E3997001C5ED3 /* IphoneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E2613216E3997001C5ED3 /* IphoneInfo.swift */; };
+		CE3E2616216E43C6001C5ED3 /* IphonesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E2615216E43C6001C5ED3 /* IphonesModel.swift */; };
 		CEEDDDA02168B5A900197E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDDD9F2168B5A900197E91 /* AppDelegate.swift */; };
 		CEEDDDA22168B5A900197E91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDDDA12168B5A900197E91 /* ViewController.swift */; };
 		CEEDDDA52168B5A900197E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEDDDA32168B5A900197E91 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3E2613216E3997001C5ED3 /* IphoneInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneInfo.swift; sourceTree = "<group>"; };
+		CE3E2615216E43C6001C5ED3 /* IphonesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphonesModel.swift; sourceTree = "<group>"; };
 		CEEDDD9C2168B5A800197E91 /* dz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDDD9F2168B5A900197E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEDDDA12168B5A900197E91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				CEEDDDBD216A706900197E91 /* Assets.xcassets */,
 				CEEDDDC5216A73C800197E91 /* AddsCell.swift */,
 				CEEDDDC6216A73C800197E91 /* AddsCell.xib */,
+				CE3E2613216E3997001C5ED3 /* IphoneInfo.swift */,
+				CE3E2615216E43C6001C5ED3 /* IphonesModel.swift */,
 			);
 			path = dz2;
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 			files = (
 				CEEDDDBB216A622D00197E91 /* IphoneCell.swift in Sources */,
 				CEEDDDC7216A73C800197E91 /* AddsCell.swift in Sources */,
+				CE3E2616216E43C6001C5ED3 /* IphonesModel.swift in Sources */,
 				CEEDDDA22168B5A900197E91 /* ViewController.swift in Sources */,
+				CE3E2614216E3997001C5ED3 /* IphoneInfo.swift in Sources */,
 				CEEDDDA02168B5A900197E91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

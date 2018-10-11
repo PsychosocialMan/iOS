@@ -33,8 +33,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUP-2y-2N0">
-                                <rect key="frame" x="41" y="118.5" width="63" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUP-2y-2N0">
+                                <rect key="frame" x="49" y="118.5" width="47" height="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8n4-ut-JAZ">
+                                <rect key="frame" x="101" y="119" width="16" height="22"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,6 +48,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.94117647058823528" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8n4-ut-JAZ" firstAttribute="centerY" secondItem="kUP-2y-2N0" secondAttribute="centerY" id="9MY-TK-Shb"/>
+                            <constraint firstItem="8n4-ut-JAZ" firstAttribute="leading" secondItem="kUP-2y-2N0" secondAttribute="trailing" constant="5" id="Hsh-Ab-jsq"/>
+                            <constraint firstItem="8n4-ut-JAZ" firstAttribute="height" secondItem="kUP-2y-2N0" secondAttribute="height" id="L4U-sD-Be1"/>
                             <constraint firstItem="dIp-Jx-7q1" firstAttribute="centerX" secondItem="rdb-he-3Io" secondAttribute="centerX" id="NJ2-Zl-5VW"/>
                             <constraint firstItem="kUP-2y-2N0" firstAttribute="centerX" secondItem="rdb-he-3Io" secondAttribute="centerX" id="QLF-c7-RtO"/>
                             <constraint firstItem="dIp-Jx-7q1" firstAttribute="centerY" secondItem="rdb-he-3Io" secondAttribute="centerY" multiplier="0.66" id="egm-t3-LpX"/>
@@ -79,6 +88,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currency" destination="8n4-ut-JAZ" id="CeN-jN-yu1"/>
+                <outlet property="image" destination="z5Y-Vc-qHP" id="Eeb-Lk-rUC"/>
+                <outlet property="name" destination="JeE-xU-O8Z" id="S1K-HQ-hI0"/>
+                <outlet property="price" destination="kUP-2y-2N0" id="hrQ-uA-Unn"/>
+                <outlet property="specifications" destination="ia6-rW-Yo2" id="sp3-DW-iy3"/>
+            </connections>
             <point key="canvasLocation" x="91.5" y="27.5"/>
         </tableViewCell>
     </objects>

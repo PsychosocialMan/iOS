@@ -8,18 +8,53 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var model = IphonesModel()
+    private let contentId = "contentId"
+    private let addsId = "addsId"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        configureTable()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        productTable.reloadData()
+    }
+    
+    func configureTable(){
+        productTable.delegate = self
+        productTable.dataSource = self
+        productTable.tableFooterView = UIView()
+        productTable.rowHeight = UITableViewAutomaticDimension
+        productTable.register(UINib(nibName: "IphoneCell", bundle: nil), forCellReuseIdentifier: contentId)
+        productTable.register(UINib(nibName: "AddsCell", bundle: nil), forCellReuseIdentifier: addsId)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return model.models.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if ((indexPath.row + 1) % 3 == 0){
+            guard let cell = productTable.dequeueReusableCell(withIdentifier: addsId, for: indexPath) as? AddsCell else {
+                return UITableViewCell()
+            }
+            return cell
+        } else {
+            guard let cell = productTable.dequeueReusableCell(withIdentifier: contentId, for: indexPath) as? IphoneCell else {
+                return UITableViewCell()
+            }
+            cell.configureCell(info: model.models[indexPath.row])
+            return cell
+        }
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    @IBOutlet weak var productTable: UITableView!
+    
 
 }
 

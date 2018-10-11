@@ -14,7 +14,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ij-j9-kDK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -71,7 +70,11 @@
                         <viewLayoutGuide key="safeArea" id="tXj-ia-TuP"/>
                     </view>
                     <navigationItem key="navigationItem" id="rwO-sl-sgF"/>
+                    <connections>
+                        <outlet property="productTable" destination="log-ZE-nI7" id="R3t-3l-4Du"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="466" y="117"/>
         </scene>
@@ -99,6 +102,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="US1-er-u9I" firstAttribute="trailing" secondItem="VDE-KP-7RS" secondAttribute="trailing" constant="127" id="Rfb-LY-egy"/>
                             <constraint firstItem="Udf-Fd-DW6" firstAttribute="top" secondItem="US1-er-u9I" secondAttribute="top" constant="20" id="fmU-en-mok"/>
                             <constraint firstItem="VDE-KP-7RS" firstAttribute="leading" secondItem="Udf-Fd-DW6" secondAttribute="trailing" constant="50" id="hig-Cd-Rda"/>
                             <constraint firstItem="VDE-KP-7RS" firstAttribute="centerY" secondItem="Udf-Fd-DW6" secondAttribute="centerY" id="r2y-GX-tBF"/>

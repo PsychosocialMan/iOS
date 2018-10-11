@@ -10,15 +10,36 @@ import UIKit
 
 class IphoneCell: UITableViewCell {
 
+    @IBOutlet weak var price: UILabel!
+    
+    @IBOutlet weak var specifications: UILabel!
+    
+    @IBOutlet weak var name: UILabel!
+    
+    @IBOutlet weak var phoneImage: UIImageView!
+    
+    @IBOutlet weak var currency: UILabel!
+    
+    // Необходимо для связки ячейки и информации в ней
+    private var info: IphoneInfo?
+    
+    // Вызывается, когда ячейка будет загружена из nib
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func configureCell(info: IphoneInfo) {
+        self.info = info
+        price.text = "\(info.price)"
+        specifications.text = info.specifications
+        name.text = info.name
+        phoneImage.image = info.phoneImage
+        currency.text = "\(info.currency.rawValue)"
     }
     
 }
