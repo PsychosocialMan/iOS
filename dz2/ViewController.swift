@@ -33,7 +33,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.models.count
+        let count = model.models.count + model.models.count / 3 + 1
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             guard let cell = productTable.dequeueReusableCell(withIdentifier: contentId, for: indexPath) as? IphoneCell else {
                 return UITableViewCell()
             }
-            cell.configureCell(info: model.models[indexPath.row])
+            cell.configureCell(info: model.models[indexPath.row - indexPath.row / 3])
             return cell
         }
         

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CE3E2614216E3997001C5ED3 /* IphoneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E2613216E3997001C5ED3 /* IphoneInfo.swift */; };
 		CE3E2616216E43C6001C5ED3 /* IphonesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E2615216E43C6001C5ED3 /* IphonesModel.swift */; };
+		CEAEB2CE21748DF8003A4EFE /* FullInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEB2CD21748DF7003A4EFE /* FullInfoViewController.swift */; };
+		CEAEB2D021748E30003A4EFE /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEB2CF21748E30003A4EFE /* FullImageViewController.swift */; };
 		CEEDDDA02168B5A900197E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDDD9F2168B5A900197E91 /* AppDelegate.swift */; };
 		CEEDDDA22168B5A900197E91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDDDA12168B5A900197E91 /* ViewController.swift */; };
 		CEEDDDA52168B5A900197E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEDDDA32168B5A900197E91 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		CE3E2613216E3997001C5ED3 /* IphoneInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneInfo.swift; sourceTree = "<group>"; };
 		CE3E2615216E43C6001C5ED3 /* IphonesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphonesModel.swift; sourceTree = "<group>"; };
+		CEAEB2CD21748DF7003A4EFE /* FullInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInfoViewController.swift; sourceTree = "<group>"; };
+		CEAEB2CF21748E30003A4EFE /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
 		CEEDDD9C2168B5A800197E91 /* dz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDDD9F2168B5A900197E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEDDDA12168B5A900197E91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				CEEDDDC6216A73C800197E91 /* AddsCell.xib */,
 				CE3E2613216E3997001C5ED3 /* IphoneInfo.swift */,
 				CE3E2615216E43C6001C5ED3 /* IphonesModel.swift */,
+				CEAEB2CD21748DF7003A4EFE /* FullInfoViewController.swift */,
+				CEAEB2CF21748E30003A4EFE /* FullImageViewController.swift */,
 			);
 			path = dz2;
 			sourceTree = "<group>";
@@ -155,10 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAEB2CE21748DF8003A4EFE /* FullInfoViewController.swift in Sources */,
 				CEEDDDBB216A622D00197E91 /* IphoneCell.swift in Sources */,
 				CEEDDDC7216A73C800197E91 /* AddsCell.swift in Sources */,
 				CE3E2616216E43C6001C5ED3 /* IphonesModel.swift in Sources */,
 				CEEDDDA22168B5A900197E91 /* ViewController.swift in Sources */,
+				CEAEB2D021748E30003A4EFE /* FullImageViewController.swift in Sources */,
 				CE3E2614216E3997001C5ED3 /* IphoneInfo.swift in Sources */,
 				CEEDDDA02168B5A900197E91 /* AppDelegate.swift in Sources */,
 			);
