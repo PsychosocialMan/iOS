@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var model = IphonesModel()
-    private let contentId = "contentId"
-    private let addsId = "addsId"
+    private let contentId = "\(IphoneCell.self)"
+    private let addsId = "\(AddsCell.self)"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        productTable.reloadData()
     }
     
     func configureTable(){
