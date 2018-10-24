@@ -22,13 +22,15 @@ class IphoneInfo {
     var specifications: String
     var name: String
     var phoneImage: UIImage
+    var description: String
     
-    init(id: Int, price: Int, currency: Currency, specifications: String, name: String, phoneImage: UIImage) {
+    init(id: Int, price: Int, currency: Currency, specifications: String, name: String, phoneImage: UIImage, description: String) {
         self.id = id
         self.price = price
         self.currency = currency
         self.specifications = specifications
         self.name = name
         self.phoneImage = phoneImage
+        self.description = description
     }
 }

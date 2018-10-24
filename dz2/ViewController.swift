@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var model = IphonesModel()
     private let contentId = "\(IphoneCell.self)"
     private let addsId = "\(AddsCell.self)"
+    private let seagueNameFullInfo = "toFullInfo"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if ((indexPath.row + 1) % 3 != 0) {
+            let iphoneModel = model.models[indexPath.row]
+            performSegue(withIdentifier: seagueNameFullInfo, sender: iphoneModel)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == seagueNameFullInfo {
+            guard
+                let controller = segue.destination as? FullInfoViewController,
+                let iphoneInfo = sender as? IphoneInfo
+                else { return }
+            controller.iphoneInfo = iphoneInfo
+        }
     }
 
     @IBOutlet weak var productTable: UITableView!
