@@ -26,6 +26,8 @@ class FullInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fullScreen.layer.cornerRadius = fullScreen.frame.size.width / 2
+        fullScreen.clipsToBounds = true
         prepareUI()
     }
     

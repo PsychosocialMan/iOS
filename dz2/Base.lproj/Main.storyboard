@@ -228,13 +228,18 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hX4-Xe-6DI">
                                         <rect key="frame" x="5" y="5" width="150" height="250"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4F-7X-LoR">
-                                                <rect key="frame" x="90" y="210" width="50" height="30"/>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4F-7X-LoR">
+                                                <rect key="frame" x="110" y="210" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.84472447633743286" green="0.94449251890182495" blue="0.95663696527481079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="C1k-JZ-Nf5"/>
+                                                    <constraint firstAttribute="width" constant="30" id="C1k-JZ-Nf5"/>
                                                     <constraint firstAttribute="height" constant="30" id="pt0-6d-jZk"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="kisspng-arrow-keys-button-computer-icons-zoom-in-button-5ae3404fb08177.174521931524842575723"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="25"/>
@@ -339,7 +344,6 @@
     <resources>
         <image name="fondo-abstracto-del-cielo-en-color-dulce_56745-4" width="313" height="239"/>
         <image name="iphone-xs-max" width="215" height="215"/>
-        <image name="kisspng-arrow-keys-button-computer-icons-zoom-in-button-5ae3404fb08177.174521931524842575723" width="900" height="520"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xyp-AH-B5b"/>
